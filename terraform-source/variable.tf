@@ -6,19 +6,19 @@ variable "aws_region" {
 
 variable "ami_id" {
   type        = string
-  description = "AMI ID to use for the instance"
-  default     = "ami-03814457ed908d8f6"
+  description = "Amazon Linux 2 AMI"
+  default     = "ami-02bcdd2c1673f8635"
 }
 
 variable "instance_type" {
-  type        = string
-  default     = "t2.micro"
+  type    = string
+  default = "t3.micro"
 }
 
 variable "key_name" {
   type        = string
   description = "EC2 Key pair name"
-  default = "metrocanadakp"
+  default     = "mocanada-kp"
 }
 
 variable "environment" {
@@ -29,5 +29,5 @@ variable "environment" {
 variable "vpc_id" {
   type        = string
   description = "VPC ID to launch resources into"
-  default = "vpc-0d5d4b0f4e6f895ad"
+  default     = "vpc-0ff2839d767b789ba"
 }
